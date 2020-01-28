@@ -1,0 +1,2 @@
+base = {workspace = amiito_doc_source; };
+packages = { };
