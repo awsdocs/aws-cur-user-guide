@@ -26,7 +26,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/InstanceTypeFamily<a name="savingsplans-details-I-InstanceTypeFamily"></a>
 + **Description:** The instance family that is associated with the specified usage\.
-+ **Line items applicable:** Usage
++ **Line items applicable:** SavingsPlanCoveredUsage
 + **Sample values:** `m4`, `g2`
 + **Services:**
   + Amazon EC2
@@ -47,7 +47,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 ### savingsPlan/PaymentOption<a name="savingsplans-details-P-PaymentOption"></a>
 + **Description:** The payment options available for your Savings Plan\.
 + **Line items applicable:** SavingsPlanUpfrontFee
-+ **Sample values:** `PartialUpfront`, `AllUpfront`, `NoUpfront`
++ **Sample values:** `Partial Upfront`, `All Upfront`, `No Upfront`
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -71,7 +71,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/Region<a name="savingsplans-details-R-Region"></a>
 + **Description:** The AWS Region \(geographic area\) that hosts your AWS services\. You can use this field to analyze spend across a particular AWS Region\.
-+ **Line items applicable:** Usage, SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanUpfrontFee
 + **Sample values:** `eu-west-3`, `us-west-1`, `us-east-1`, `ap-northeast-2`, `sa-east-1`
 + **Services:**
   + Amazon EC2
@@ -88,14 +88,14 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/SavingsPlanEffectiveCost<a name="reservation-details-S-SavingsPlanEffectiveCost"></a>
 + **Description:** The proportion of the Savings Plan monthly commitment amount \(Upfront and recurring\) that is allocated to each usage line\.
-+ **Line items applicable:** Usage
++ **Line items applicable:** SavingsPlanCoveredUsage
 + **Services:**
   + Amazon EC2
   + Fargate
 
 ### savingsPlan/SavingsPlanRate<a name="savingsplans-details-S-SavingsPlanRate"></a>
 + **Description:** The Savings Plan rate for the usage\.
-+ **Line items applicable:** Usage
++ **Line items applicable:** SavingsPlanCoveredUsage
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -120,7 +120,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/UsedCommitment<a name="savingsplans-details-U-UsedCommitment"></a>
 + **Description:** The total dollar amount of the Savings Plan commitment used\. \(SavingsPlanRate multiplied by usage\)
-+ **Line items applicable:** Usage
++ **Line items applicable:** SavingsPlanCoveredUsage
 + **Services:**
   + Amazon EC2
   + Fargate

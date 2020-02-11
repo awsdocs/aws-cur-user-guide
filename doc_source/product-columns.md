@@ -326,24 +326,6 @@ The product columns provide metadata about the product that incurred the expense
   + Amazon EC2
   + Amazon MQ
 
-### product/PurchaseOption<a name="product-details-P-purchase"></a>
-+ **Description:** Describes the Amazon EC2 purchasing option\. 
-+ **Sample values:** 
-  + `On-Demand Instances` – Pay by the second for the instances that you launch
-  + `Reserved Instances` – Purchase, at a significant discount, instances that are always available, for a term of one or three years
-  + `Scheduled Instances` – Purchase instances that are always available on the specified recurring schedule, for a one\-year term
-  + `Spot Instances` – Request unused EC2 instances, which can lower your Amazon EC2 costs significantly
-  + `Dedicated Hosts` – Pay for a physical host that is fully dedicated to running your instances and bring your existing per\-socket, per\-core, or per\-VM software licenses to reduce costs
-  + `Dedicated Instances` – Pay, by the hour, for instances that run on single\-tenant hardware
-  + `Capacity Reservations` – Reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration
-+ **Services:**
-  + Amazon DynamoDB
-  + Amazon EC2
-  + Amazon ES
-  + Amazon ElastiCache
-  + Amazon RDS
-  + Amazon Redshift
-
 ## R<a name="product-details-R"></a>
 
 ### product/region<a name="product-details-R-region"></a>
