@@ -78,7 +78,26 @@ The product columns provide metadata about the product that incurred the expense
   + Amazon Neptune
   + Amazon RDS
   + AWS Database Migration Service
+  
+## F<a name="product-details-F"></a>
 
+### product/fromLocation<a name="product-details-F-fromLocation"></a>
++ **Description:** Describes the location from which usage originated. \. 
++ **Sample values:** `External`, `US East (N. Virginia)`, `Global` 
++ **Services:**
+  + AWS DataTransfer
+  + Amazon CloudFront
+
+### product/fromLocationType<a name="product-details-F-fromLocationType"></a>
++ **Description:** Describes the location type from which usage the originated. \. 
++ **Sample values:** `AWS Region`, `AWS Edge Location`, `Other` 
++ **Services:**
+  + AWS DirectConnect
+  + AWS MediaConnect
+  + Amazon CloudFront
+  + Amazon Lightsail
+  + AWS Shield
+  
 ## G<a name="product-details-G"></a>
 
 ### product/gpu<a name="product-details-G-gpu"></a>
@@ -386,6 +405,26 @@ The product columns provide metadata about the product that incurred the expense
   + Amazon EC2
   + Amazon ECS
 
+### product/toLocation<a name="product-details-T-toLocation"></a>
++ **Description:** Describes the location usage destination. \. 
++ **Sample values:** `External`, `US East (N. Virginia)` 
++ **Services:**
+  + AWS DataTransfer
+  + Amazon CloudFront
+
+### product/toLocationType<a name="product-details-T-toLocationType"></a>
++ **Description:** Describes the destination location of the service usage. \. 
++ **Sample values:** `AWS Region`, `AWS Edge Location`, `Other` 
++ **Services:**
+  + AWSDataTransfer
+  + AWSDirectConnect
+  + AWSMediaConnect
+  + AWSShield
+  + AmazonCloudFront
+  + AmazonLightsail
+  + AmazonNeptune
+  + AmazonSNS
+  
 ## U<a name="product-details-U"></a>
 
 ### product/usagetype<a name="product-details-U-usage"></a>
