@@ -8,7 +8,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/AmortizedUpfrontCommitmentForBillingPeriod<a name="savingsplans-details-A-AmortizedUpfrontCommitmentForBillingPeriod"></a>
 + **Description:** The amount of upfront fee a Savings Plan subscription is costing you for the billing period\. The initial upfront payment for **All Upfront Savings Plan** and **Partial Upfront Savings Plan** amortized over the current month\. For **No Upfront Savings Plan**, the value is 0\.
-+ **Line items applicable:** SavingsPlanRecurringFee
++ **Line items applicable:** SavingsPlanUpfrontFee
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -17,7 +17,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/EndTime<a name="savingsplans-details-E-EndTime"></a>
 + **Description:** The expiration date for the Savings Plan agreement\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -36,7 +36,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/OfferingType<a name="savingsplans-details-O-OfferingType"></a>
 + **Description:** Describes the type of Savings Plan purchased\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Sample values:** `ComputeSavingsPlan`, `EC2InstanceSavingsPlan`
 + **Services:**
   + Amazon EC2
@@ -46,7 +46,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/PaymentOption<a name="savingsplans-details-P-PaymentOption"></a>
 + **Description:** The payment options available for your Savings Plan\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Sample values:** `Partial Upfront`, `All Upfront`, `No Upfront`
 + **Services:**
   + Amazon EC2
@@ -54,7 +54,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/PurchaseTerm<a name="savingsplans-details-P-PurchaseTerm"></a>
 + **Description:** Describes the duration, or term, of the Savings Plan\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Sample values:** `1yr`, `3yr`
 + **Services:**
   + Amazon EC2
@@ -71,8 +71,8 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/Region<a name="savingsplans-details-R-Region"></a>
 + **Description:** The AWS Region \(geographic area\) that hosts your AWS services\. You can use this field to analyze spend across a particular AWS Region\.
-+ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanUpfrontFee
-+ **Sample values:** `eu-west-3`, `us-west-1`, `us-east-1`, `ap-northeast-2`, `sa-east-1`
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
++ **Sample values:** `Any`, `eu-west-3`, `us-west-1`, `us-east-1`, `ap-northeast-2`, `sa-east-1`
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -102,7 +102,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/StartTime<a name="savingsplans-details-S-StartTime"></a>
 + **Description:** The start date of the Savings Plan agreement\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
   + Fargate
@@ -120,7 +120,7 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 
 ### savingsPlan/UsedCommitment<a name="savingsplans-details-U-UsedCommitment"></a>
 + **Description:** The total dollar amount of the Savings Plan commitment used\. \(SavingsPlanRate multiplied by usage\)
-+ **Line items applicable:** SavingsPlanCoveredUsage
++ **Line items applicable:** SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
   + Fargate
