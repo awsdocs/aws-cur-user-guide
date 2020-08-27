@@ -111,13 +111,13 @@ There is no equivalent for RecordId in AWS CUR, but you can gather this informat
 
 AWS CUR: Refunds are identified by filtering for the `lineitem/lineitemtype = ‘Refund’` string\.
 
-DBR: Credits can be identified by parsing the ItemDescription column for the `‘Credit’` substring\. 
+DBR: Refunds are identified through parsing the ItemDescription column for the `‘Refund’` substring\. 
 
 ### Credits<a name="reporting-advanced-credits"></a>
 
-AWS CUR: Refunds are identified by filtering for the `lineitem/lineitemtype = ‘Credit’` string\.
+AWS CUR: Credits are identified by filtering for the `lineitem/lineitemtype = ‘Credit’` string\.
 
-DBR: Refunds are identified through parsing the ItemDescription column for the `‘Refund’` substring\. 
+DBR: Credits can be identified by parsing the ItemDescription column for the `‘Credit’` substring\. 
 
 ### Taxes<a name="reporting-advanced-taxes"></a>
 
