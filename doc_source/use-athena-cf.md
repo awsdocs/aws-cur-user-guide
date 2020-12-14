@@ -3,7 +3,7 @@
 **Important**  
 Before moving on to this procedure, you must wait for the first AWS CUR to be delivered to your Amazon S3 bucket\. It might take up to 8 hours for AWS to deliver your first report\.
 
-To use Athena, you must set up an AWS Glue crawler, an AWS Glue database, and an AWS Lambda event\. Billing and Cost Management provides an AWS CloudFormation template that does this setup for you\. Be sure to align the Region when using the template\. This process shows how to use the Athena AWS CloudFormation template\.<a name="use-athena-cf-steps"></a>
+To use Athena, you must set up an AWS Glue crawler, an AWS Glue database, and an AWS Lambda event\. Billing and Cost Management provides an AWS CloudFormation template that does this setup for you\. You can find this template in the Amazon S3 bucket that you setup earlier\. Be sure to align the Region when using the template\. This process shows how to use the Athena AWS CloudFormation template\.<a name="use-athena-cf-steps"></a>
 
 **To use the Athena AWS CloudFormation template**
 
