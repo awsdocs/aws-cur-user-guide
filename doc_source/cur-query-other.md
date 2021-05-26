@@ -1,18 +1,18 @@
-# Loading Report Data to Other Resources<a name="cur-query-other"></a>
+# Loading report data to other resources<a name="cur-query-other"></a>
 
 You can upload Cost and Usage Reports to Amazon Redshift and Amazon QuickSight to analyze your AWS cost and usage\.
 
 **Topics**
-+ [Loading Report Data to Amazon QuickSight](#cur-query-other-qs)
-+ [Loading Report Data to Amazon Redshift](#cur-query-other-rs)
++ [Loading report data to Amazon QuickSight](#cur-query-other-qs)
++ [Loading report data to Amazon Redshift](#cur-query-other-rs)
 
-## Loading Report Data to Amazon QuickSight<a name="cur-query-other-qs"></a>
+## Loading report data to Amazon QuickSight<a name="cur-query-other-qs"></a>
 
 You can upload your Cost and Usage Reports into Amazon QuickSight\.
 
 For more information about uploading to Amazon QuickSight, see [Creating a Data Set Using Amazon S3 Files](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-s3.html) in the *Amazon QuickSight User Guide*\.
 
-## Loading Report Data to Amazon Redshift<a name="cur-query-other-rs"></a>
+## Loading report data to Amazon Redshift<a name="cur-query-other-rs"></a>
 
 This section shows how you can upload AWS CUR to Amazon Redshift to analyze your AWS costs and usage\.
 

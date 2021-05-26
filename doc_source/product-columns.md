@@ -1,8 +1,8 @@
-# Product Details<a name="product-columns"></a>
+# Product details<a name="product-columns"></a>
 
-The product columns provide metadata about the product that incurred the expense, and the line item\. The product columns are dynamic, and their visibility in Cost and Usage Reports depends on the usage of product in the billing period\. The pricing columns are based off of the AWS Price List Service API\. AWS Price List Service API doesn't include Free Tier pricing, spot instances, products in AWS Marketplace, upfront annual subscription fees \(`Fee`\), and monthly recurring fees \(`RIFee`\)\.
+The product columns provide metadata about the product that incurred the expense, and the line item\. The product columns are dynamic, and their visibility in Cost and Usage Reports depends on the usage of product in the billing period\. The pricing columns are based off of the AWS Price List Service API\. AWS Price List Service API doesn't include free tier pricing, Spot Instances, products in AWS Marketplace, upfront annual subscription fees \(`Fee`\), and monthly recurring fees \(`RIFee`\)\.
 
- [A](#A) \| B \| [C](#C) \| [D](#D) \| [E](#E) \| F \| [G](#G) \| H \| [I](#I) \| J \| K \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| Q \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| WXYZ 
+ [A](#A) \| B \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| H \| [I](#I) \| J \| K \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| Q \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| WXYZ 
 
 ## A<a name="product-details-A"></a>
 
@@ -37,7 +37,7 @@ The product columns provide metadata about the product that incurred the expense
 ## D<a name="product-details-D"></a>
 
 ### product/dedicatedEbsThroughput<a name="product-details-D-dedicated"></a>
-+ **Description:** Describes the dedicated throughput between your instances \(e\.g\., Amazon EC2 instances and Amazon EBS volumes\), with options between 500 and 10,000 megabits per second \(Mbps\) depending on the instance type used\. The dedicated throughput minimizes contention between Amazon EBS I/O and other traffic from your EC2 instance, providing the best performance for your Amazon EBS volumes\.
++ **Description:** Describes the dedicated throughput between your instances \(for example, Amazon EC2 instances and Amazon EBS volumes\), with options between 500 and 10,000 megabits per second \(Mbps\) depending on the instance type used\. The dedicated throughput minimizes contention between Amazon EBS I/O and other traffic from your EC2 instance, providing the best performance for your Amazon EBS volumes\.
 + ** Sample values: ** `200 Mbps`, `Upto 5000 Mbps`
 + **Services:**
   + Amazon EC2
@@ -78,6 +78,25 @@ The product columns provide metadata about the product that incurred the expense
   + Amazon Neptune
   + Amazon RDS
   + AWS Database Migration Service
+
+## F<a name="product-details-F"></a>
+
+### product/fromLocation<a name="product-details-F-fromLoc"></a>
++ **Description:** Describes the location where the usage originated from\.
++ **Sample values:** `External`, `US East (N. Virginia)`, `Global`
++ **Services:**
+  + Amazon CloudFront
+  + AWS DataTransfer
+
+### product/fromLocationType<a name="product-details-F-fromloctype"></a>
++ **Description:** Describes the location type where the usage originated from\.
++ **Sample values:** `AWS Region`, `AWS Edge Location`
++ **Services:**
+  + AWS Direct Connect
+  + AWS Elemental MediaConnect
+  + Amazon CloudFront
+  + Amazon Lightsail
+  + AWS Shield
 
 ## G<a name="product-details-G"></a>
 
@@ -159,7 +178,7 @@ The product columns provide metadata about the product that incurred the expense
   + Amazon RDS
 
 ### product/location<a name="product-details-L-location"></a>
-+ **Description:** Describes the region that your Amazon S3 bucket resides in\.
++ **Description:** Describes the Region that your Amazon S3 bucket resides in\.
 + **Sample values:** `Asia Pacific (Mumbai)`, `Asia Pacific (Seoul)`, `Canada (Central)`, `EU (London)`, `US West (Oregon)`
 + **Services:**
   + Amazon EC2
@@ -171,7 +190,7 @@ The product columns provide metadata about the product that incurred the expense
     and more\. For the full service list, download [Column\_Attribute\_Service\.zip](samples/Column_Attribute_Service.zip)\. 
 
 ### product/locationType<a name="product-details-L-location"></a>
-+ **Description:** Describes the end point of your task\. 
++ **Description:** Describes the endpoint of your task\. 
 + **Sample values:** `AWS Region`, `AWS Edge Location`, `Other` 
 + **Services:**
   + Amazon EC2
@@ -318,6 +337,7 @@ The product columns provide metadata about the product that incurred the expense
 + **Description:** The full name of the AWS service\. Use this column to filter AWS usage by AWS service\. 
 + **Sample values:** `AWS Backup`, `AWS Config`, `Amazon Registrar`, `Amazon Elastic File System`, `Amazon Elastic Compute Cloud`
 + **Services:**
+  + 
 
 ### product/provisioned<a name="product-details-P-provisioned"></a>
 + **Description:** Indicates whether Amazon EBS usage was related to provisioned Amazon EBS storage\. 
@@ -385,6 +405,25 @@ The product columns provide metadata about the product that incurred the expense
 + **Services:**
   + Amazon EC2
   + Amazon ECS
+
+### product/toLocation<a name="product-details-T-toloc"></a>
++ **Description:** Describes the location usage destination\.
++ **Sample values:** `External`, `US East (N. Virginia)`
++ **Services:**
+  + Amazon CloudFront
+  + AWS Data Transfer
+
+### product/toLocationType<a name="product-details-T-toloctype"></a>
++ **Description:** Describes the destination location of the service usage\.
++ **Sample values:** `AWS Region`, `AWS Edge Location`
++ **Services:**
+  + AWS Direct Connect
+  + AWS Elemental MediaConnect
+  + AWS Shield
+  + Amazon CloudFront
+  + Amazon Lightsail
+
+    and more\. For the full service list, download [Column\_Attribute\_Service\.zip](samples/Column_Attribute_Service.zip)\.
 
 ## U<a name="product-details-U"></a>
 

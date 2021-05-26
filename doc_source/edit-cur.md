@@ -1,4 +1,4 @@
-# Editing Your Cost and Usage Reports Configuration<a name="edit-cur"></a>
+# Editing your Cost and Usage Reports configuration<a name="edit-cur"></a>
 
 You can use the **Cost & Usage Reports** page in the Billing and Cost Management console to edit Cost and Usage Reports\.
 
@@ -32,11 +32,12 @@ The bucket must have appropriate permissions to be valid\. For more information 
 1. \(Versioned reports only\) For **Time granularity**, choose one of the following:
    + **Hourly**: If you want the line items in the report to be aggregated by the hour\.
    + **Daily**: If you want the line items in the report to be aggregated by the day\.
+   + **Monthly** if you want the line items in the report to be aggregated by month\.
 
 1. \(Versioned reports only\) For **Report versioning**, choose whether you want each version of the report to overwrite the previous version of the report, or to be delivered in addition to the previous versions\.
 
-1. For **Enable report data integration for**, select whether you want to upload your AWS CUR to Amazon Athena, Amazon Redshift, or Amazon QuickSight\. The report is compressed in the following formats:
-   + **Athena**: Parquet compression
+1. For **Enable report data integration for**, select whether you want to enable your AWS CUR to integrate with Amazon Athena, Amazon Redshift, or Amazon QuickSight\. The report is compressed in the following formats:
+   + **Athena**: Parquet format
    + **Amazon Redshift or Amazon QuickSight**: \.gz compression
 
 1. Choose **Save**\.

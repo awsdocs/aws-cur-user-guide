@@ -1,4 +1,4 @@
-# Creating an Athena Table<a name="create-manual-table"></a>
+# Creating an Athena table<a name="create-manual-table"></a>
 
 AWS includes the SQL that you need to run to create this table in your AWS CUR bucket\.<a name="create-manual-table-steps"></a>
 
@@ -32,4 +32,4 @@ AWS includes the SQL that you need to run to create this table in your AWS CUR b
 
 1. Choose **Run query**\.
 
-After you create your table, you need to load your partitions before you can run a query\. For more information, see [Column Names](cur-ate-run.md#column-transformations)\.
+After you create your table, you need to load your partitions before you can run a query\. For more information, see [Column names](cur-ate-run.md#column-transformations)\.

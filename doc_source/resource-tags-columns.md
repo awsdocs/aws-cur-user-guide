@@ -1,6 +1,6 @@
-# Resource Tags Details<a name="resource-tags-columns"></a>
+# Resource tags details<a name="resource-tags-columns"></a>
 
-You can use the Resource columns to find information about the specific resources covered by a line item\. These columns include user\-defined cost allocation tags\. Examples include the following:
+You can use the resource columns in AWS Cost and Usage Reports to find information about the specific resources covered by a line item\. These columns include user\-defined cost allocation tags\. Examples include the following:
 
 ## resourceTags/user:creator<a name="resource-details-creator"></a>
 

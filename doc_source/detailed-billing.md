@@ -13,9 +13,9 @@ AWS account number-aws-billing-detailed-line-items-yyyy-mm.csv.zip
 
 AWS recreates the DBR multiple times a day, overwriting the report\. When AWS overwrites a report, the line items might be in a different order than they were in the previous report\. A final report is created at the end of the month\. For the following month, AWS creates a new report file instead of overwriting the final report from the previous month\. Reports for previous months remain in your S3 bucket until you delete them\.
 
-For information on how to migrate your DBR to AWS CUR, see [Migrating From Detailed Billing Reports to Cost and Usage Reports](detailed-billing-migrate.md)\.
+For information on how to migrate your DBR to AWS CUR, see [Migrating from Detailed Billing Reports to Cost and Usage Reports](detailed-billing-migrate.md)\.
 
-## Understanding Unused Reservation Costs<a name="unused-reservation-costs"></a>
+## Understanding unused reservation costs<a name="unused-reservation-costs"></a>
 
 AWS Cost and Usage Reports \(AWS CUR\) can be leveraged to better understand unused RI costs\. Here’s four scenarios showing how\.
 
@@ -75,7 +75,7 @@ Using AWS CUR, you can understand your unused RI usage and costs by referring to
 In addition to matching the current functionality supported by DBR/DBR\-RT, AWS CUR has the following advantages:
 + AWS CUR has a separate column representing UnusedQuantity for the RI Fee line item vs\. DBR / DBR\-RT which overloads the UsageQuantity column with the unused hours 
 
-### Scenario 3: Capacity Reservation<a name="scenario-3"></a>
+### Scenario 3: Capacity reservation<a name="scenario-3"></a>
 
 DBR/DBR\-RT filters out Capacity Reservations related UnusedBox and UnusedDed usage type line items when covered by an RI because the RI Fee line item already covers the unused amount in the UsageQuantity and UnblendedCost fields\. Table 5 illustrates the columns and information utilized to manage unused RI costs in the DBR and DBR\-RT report\.
 
@@ -99,7 +99,7 @@ AWS CUR shows these line items as DiscountedUsage\. Table 6 illustrates the curr
 | Amazon EC2 | USW2\-BoxUsage:c3\.8xlarge | DiscountedUsage | USD 0\.00 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 644 | 47,216 | 0 | 0 | 64\.4 | 5 | 69\.4 | 
 | Amazon EC2 | USW2\-UnusedBox:c3\.8xlarge | DiscountedUsage | USD 0\.0058 used Reservation Linux/UNIX \(Amazon VPC\), c3:8xlarge Instance Hour | 100 | 6,500 | 0 | 0 | 10 | 1 | 11 | 
 
-### Scenario 4: Size Flexible Reservations<a name="scenario-4"></a>
+### Scenario 4: Size flexible reservations<a name="scenario-4"></a>
 
 Utilizing the DBR/DBR\-RT, you can understand your unused RI usage and costs by referring to fields UsageQuantity and UnblendedCosts for RI Fee line items\. RI Fee line items can be identified by the existence of ‘purchased hours’ information in the ItemDescription field\. Table 9 illustrates the columns and information utilized to manage unused RI costs in the DBR and DBR\-RT report\.
 

@@ -1,6 +1,6 @@
-# Pricing Details<a name="pricing-columns"></a>
+# Pricing details<a name="pricing-columns"></a>
 
-The prices for a line item\. The pricing columns are based off of the AWS Price List Service API\. AWS Price List Service API doesn't include Free Tier pricing, spot instances, products in AWS Marketplace, upfront annual subscription fees \(`Fee`\), and monthly recurring fees \(`RIFee`\)\. The columns include but are not limited to the following:
+The pricing columns in AWS Cost and Usage Reports contain the prices for a line item\. The pricing columns are based off of the AWS Price List Service API\. AWS Price List Service API doesn't include Free Tier pricing, Spot Instances, products in AWS Marketplace, upfront annual subscription fees \(`Fee`\), and monthly recurring fees \(`RIFee`\)\. The columns include but are not limited to the following:
 
  A \| B \| C \| D \| E \| F \| G \| H \| I \| J \| K \| [L](#pr-L) \| M \| N \| O \| [P](#pr-P) \| Q \| [R](#pr-R) \| S \| [T](#pr-T) \| [U](#pr-U) \| VWXYZ 
 
@@ -26,9 +26,13 @@ How you chose to pay for this line item\. Valid values are `All Upfront`, `Parti
 
 ## R<a name="pricing-details-R"></a>
 
+### pricing/RateCode<a name="pricing-details-R-RateCode"></a>
+
+A unique code for a product/ offer/ pricing\-tier combination\. The product and term combinations can have multiple price dimensions, such as a free tier, low\-use tier, and high\-use tier\.
+
 ### pricing/RateId<a name="pricing-details-R-RateId"></a>
 
-The ID of the rate for a line item\. This column will be unavailable after June 2020\.
+The ID of the rate for a line item\.
 
 ## T<a name="pricing-details-T"></a>
 

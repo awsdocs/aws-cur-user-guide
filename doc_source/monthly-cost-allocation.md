@@ -1,4 +1,4 @@
-# Monthly Cost Allocation<a name="monthly-cost-allocation"></a>
+# Monthly cost allocation<a name="monthly-cost-allocation"></a>
 
 **Important**  
 The Monthly Cost Allocation Report feature will be unavailable at a later date\. We strongly recommend that you use the AWS Cost and Usage Reports instead\.

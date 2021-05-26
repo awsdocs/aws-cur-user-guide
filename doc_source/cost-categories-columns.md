@@ -1,11 +1,6 @@
-# Cost Categories Details<a name="cost-categories-columns"></a>
+# Cost Categories details<a name="cost-categories-columns"></a>
 
-
-|  | 
-| --- |
-| Cost Category is in preview release for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
-You can use the Cost Category columns to find information about the specific line items categorized by the Cost Categories feature\. Cost Category columns are automatically populated when you create a Cost Category and categorization rule\. These columns include user\-defined Cost Category names as the column headers, and corresponding Cost Category values\. Examples include the following:
+You can use the Cost Category columns in AWS Cost and Usage Reports to find information about the specific line items categorized by the Cost Categories feature\. Cost Category columns are automatically populated when you create a Cost Category and categorization rule\. These columns include user\-defined Cost Category names as the column headers, and corresponding Cost Category values\. Examples include the following:
 
 ## costCategory/Project<a name="cc-details-project"></a>
 

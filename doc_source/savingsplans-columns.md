@@ -1,6 +1,6 @@
-# Savings Plans Details<a name="savingsplans-columns"></a>
+# Savings Plans details<a name="savingsplans-columns"></a>
 
-The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsPlan columns are visible if you have purchased Savings Plans\. For more information about Savings Plans, see [What are Savings Plans?](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html) in the *Savings Plans User Guide*\.
+The SavingsPlan columns in AWS Cost and Usage Reports provide details about the ComputeSavingsPlans\. SavingsPlan columns are visible if you have purchased Savings Plans\. For more information about Savings Plans, see [What are Savings Plans?](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html) in the *Savings Plans User Guide*\.
 
  [A](#sp-A) \| B \| C \| D \| [E](#sp-E) \| F \| G \| H \| [I](#sp-I) \| J \| K \| L \| M \| N \| [O](#sp-O) \| [P](#sp-P) \| Q \| [R](#sp-R) \| [S](#sp-S) \| [T](#sp-T) \| [U](#sp-U) \| VWXYZ 
 
@@ -12,15 +12,19 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## E<a name="savingsplans-details-E"></a>
 
 ### savingsPlan/EndTime<a name="savingsplans-details-E-EndTime"></a>
 + **Description:** The expiration date for the Savings Plan agreement\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## I<a name="savingsplans-details-I"></a>
 
@@ -31,34 +35,42 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## O<a name="savingsplans-details-O"></a>
 
 ### savingsPlan/OfferingType<a name="savingsplans-details-O-OfferingType"></a>
 + **Description:** Describes the type of Savings Plan purchased\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
-+ **Sample values:** `ComputeSavingsPlan`, `EC2InstanceSavingsPlan`
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
++ **Sample values:** `ComputeSavingsPlan`, `EC2InstanceSavingsPlan`, `SageMakerSavingsPlans`
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## P<a name="savingsplans-details-P"></a>
 
 ### savingsPlan/PaymentOption<a name="savingsplans-details-P-PaymentOption"></a>
 + **Description:** The payment options available for your Savings Plan\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Sample values:** `Partial Upfront`, `All Upfront`, `No Upfront`
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ### savingsPlan/PurchaseTerm<a name="savingsplans-details-P-PurchaseTerm"></a>
 + **Description:** Describes the duration, or term, of the Savings Plan\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Sample values:** `1yr`, `3yr`
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## R<a name="savingsplans-details-R"></a>
 
@@ -68,14 +80,18 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ### savingsPlan/Region<a name="savingsplans-details-R-Region"></a>
 + **Description:** The AWS Region \(geographic area\) that hosts your AWS services\. You can use this field to analyze spend across a particular AWS Region\.
-+ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanUpfrontFee
-+ **Sample values:** `eu-west-3`, `us-west-1`, `us-east-1`, `ap-northeast-2`, `sa-east-1`
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
++ **Sample values:** `US East (N. Virginia)`, `US West (N. California)`, `US East (Ohio)`, `Asia Pacific (Mumbai)`, `Europe (Ireland)`
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## S<a name="savingsplans-details-S"></a>
 
@@ -85,13 +101,17 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ### savingsPlan/SavingsPlanEffectiveCost<a name="reservation-details-S-SavingsPlanEffectiveCost"></a>
-+ **Description:** The proportion of the Savings Plan monthly commitment amount \(Upfront and recurring\) that is allocated to each usage line\.
++ **Description:** The proportion of the Savings Plan monthly commitment amount \(upfront and recurring\) that is allocated to each usage line\.
 + **Line items applicable:** SavingsPlanCoveredUsage
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ### savingsPlan/SavingsPlanRate<a name="savingsplans-details-S-SavingsPlanRate"></a>
 + **Description:** The Savings Plan rate for the usage\.
@@ -99,13 +119,17 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ### savingsPlan/StartTime<a name="savingsplans-details-S-StartTime"></a>
 + **Description:** The start date of the Savings Plan agreement\.
-+ **Line items applicable:** SavingsPlanUpfrontFee
++ **Line items applicable:** SavingsPlanCoveredUsage, SavingsPlanNegation, SavingsPlanUpfrontFee, SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## T<a name="savingsplans-details-T"></a>
 
@@ -115,12 +139,16 @@ The SavingsPlan columns provide details about the ComputeSavingsPlans\. SavingsP
 + **Services:**
   + Amazon EC2
   + Fargate
+  + AWS Lambda
+  + Amazon SageMaker
 
 ## U<a name="savingsplans-details-U"></a>
 
 ### savingsPlan/UsedCommitment<a name="savingsplans-details-U-UsedCommitment"></a>
 + **Description:** The total dollar amount of the Savings Plan commitment used\. \(SavingsPlanRate multiplied by usage\)
-+ **Line items applicable:** SavingsPlanCoveredUsage
++ **Line items applicable:** SavingsPlanRecurringFee
 + **Services:**
   + Amazon EC2
+  + AWS Lambda
   + Fargate
+  + Amazon SageMaker

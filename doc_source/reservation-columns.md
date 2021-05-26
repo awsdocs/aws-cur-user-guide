@@ -1,13 +1,13 @@
-# Reservation Details<a name="reservation-columns"></a>
+# Reservation details<a name="reservation-columns"></a>
 
-The reservation columns provide details about reserved resources\.
+The reservation columns in AWS Cost and Usage Reports provide details about reserved resources\.
 
  [A](#r-A) \| B \| C \| D \| [E](#r-E) \| F \| G \| H \| I \| J \| K \| L \| [M](#r-M) \| [N](#r-N) \| O \| P \| Q \| [R](#r-R) \| [S](#r-S) \| [T](#r-T) \| [U](#r-U) \| VWXYZ 
 
 ## A<a name="reservation-details-A"></a>
 
 ### reservation/AmortizedUpfrontCostForUsage<a name="reservation-details-A-AmortizedUpfrontCostForUsage"></a>
-+ **Description:** The initial upfront payment for All Upfront RIs and Partial Upfront RIs amortized for usage time\. Because there are no upfront payments for No Upfront RIs, the value for a No Upfront RI is `0`\.
++ **Description:** The initial upfront payment for all upfront RIs and partial upfront RIs amortized for usage time\. Because there are no upfront payments for no upfront RIs, the value for a no upfront RI is `0`\. We do not provide this value for Dedicated Host reservations at this time\. The change will be made in a future update\.
 + **Line items applicable:** DiscountedUsage
 + **Sample values:** `0.05`, `0.17`, `0.15`
 + **Services:**
@@ -19,7 +19,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/AmortizedUpfrontFeeForBillingPeriod<a name="reservation-details-A-AmortizedUpfrontFeeForBillingPeriod"></a>
-+ **Description:** Describes how much of the upfront fee for this reservation is costing you for the billing period\. The initial upfront payment for All Upfront RIs and Partial Upfront RIs, amortized over this month\. Because there are no upfront fees for No Upfront RIs, the value for No Upfront RIs is `0`\.
++ **Description:** Describes how much of the upfront fee for this reservation is costing you for the billing period\. The initial upfront payment for all upfront RIs and partial upfront RIs, amortized over this month\. Because there are no upfront fees for no upfront RIs, the value for no upfront RIs is `0`\. We do not provide this value for Dedicated Host reservations at this time\. The change will be made in a future update\.
 + **Line items applicable:** RIFee
 + **Sample values:** `29.15`, `200.67`, `214.43`
 + **Services:**
@@ -31,7 +31,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/AvailabilityZone<a name="reservation-details-A-AvailabilityZone"></a>
-+ **Description:** The availability zone of the resource that is associated with this line item\.
++ **Description:** The Availability Zone of the resource that is associated with this line item\.
 + **Line items applicable:** Fee, Refund, RIFee
 + **Sample values:** `us-east-1`, `us-east-1b`, `eu-west-1b`, `ap-southeast-2a`
 + **Services:**
@@ -103,7 +103,7 @@ The reservation columns provide details about reserved resources\.
 ## R<a name="reservation-details-R"></a>
 
 ### reservation/RecurringFeeForUsage<a name="reservation-details-R-RecurringFeeForUsage"></a>
-+ **Description:** The recurring fee amortized for usage time, for Partial Upfront RIs and No Upfront RIs\. Because All Upfront RIs don't have recurring fee payments greater than `0`, the value for All Upfront RIs is `0`\.
++ **Description:** The recurring fee amortized for usage time, for partial upfront RIs and no upfront RIs\. Because all upfront RIs don't have recurring fee payments greater than `0`, the value for all upfront RIs is `0`\.
 + **Line items applicable:** DiscountedUsage
 + **Sample values:** `0.139`, `0.729`, `0.018`
 + **Services:**
@@ -140,7 +140,7 @@ The reservation columns provide details about reserved resources\.
 
 ### reservation/SubscriptionId<a name="reservation-details-S-SubscriptionId"></a>
 + **Description:** A unique identifier that maps a line item with the associated offer\. We recommend you use the RI ARN as your identifier of an AWS Reserved Instance, but both can be used\.
-+ **Line items applicable:** Fee, RIFee, DiscountedUsage, Refund, Credit and Usage
++ **Line items applicable:** Fee, RIFee, DiscountedUsage, Refund, Credit, and Usage
 + **Sample values:** `123456789`, `111122222`, `333344444`
 + **Services:**
   + Amazon EC2
@@ -199,7 +199,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/UnusedAmortizedUpfrontFeeForBillingPeriod<a name="reservation-details-U-UnusedAmortizedUpfrontFeeForBillingPeriod"></a>
-+ **Description:** The amortized\-upfront\-fee\-for\-billing\-period\-column amortized portion of the initial upfront fee for All Upfront RIs and Partial Upfront RIs\. Because there are no upfront payments for No Upfront RIs, the value for No Upfront RIs is `0`\.
++ **Description:** The amortized\-upfront\-fee\-for\-billing\-period\-column amortized portion of the initial upfront fee for all upfront RIs and partial upfront RIs\. Because there are no upfront payments for no upfront RIs, the value for no upfront RIs is `0`\. We do not provide this value for Dedicated Host reservations at this time\. The change will be made in a future update\.
 + **Line items applicable:** RIFee
 + **Sample values:** `6.05`, `1.97`, `0.17`
 + **Services:**
@@ -210,7 +210,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/UnusedNormalizedUnitQuantity<a name="reservation-details-U-UnusedNormalizedUnitQuantity"></a>
-+ **Description:** The number of unused normalized units for a size\-flexible regional RI that you didn't use during this billing period\.
++ **Description:** The number of unused normalized units for a size\-flexible Regional RI that you didn't use during this billing period\.
 + **Line items applicable:** RIFee
 + **Sample values:** `25.00`, `3.50`, `274.33`
 + **Services:**
@@ -228,7 +228,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/UnusedRecurringFee<a name="reservation-details-U-UnusedRecurringFee"></a>
-+ **Description:** The recurring fees associated with your unused reservation hours for Partial Upfront and No Upfront RIs\. Because All Upfront RIs don't have recurring fees greater than `0`, the value for All Upfront RIs is `0`\.
++ **Description:** The recurring fees associated with your unused reservation hours for partial upfront and no upfront RIs\. Because all upfront RIs don't have recurring fees greater than `0`, the value for All Upfront RIs is `0`\.
 + **Line items applicable:** RIFee
 + **Sample values:** `0.02971114`, `0.19190000`, `1.37280000`
 + **Services:**
@@ -239,7 +239,7 @@ The reservation columns provide details about reserved resources\.
   + Amazon RDS
 
 ### reservation/UpfrontValue<a name="reservation-details-U-UpfrontValue"></a>
-+ **Description:** The upfront price paid for your AWS Reserved Instance\. For No Upfront RIs, this value is `0`\.
++ **Description:** The upfront price paid for your AWS Reserved Instance\. For no upfront RIs, this value is `0`\.
 + **Line items applicable:** RIFee
 + **Sample values:** `150.00`, `1000.00`, `2000.00`
 + **Services:**
